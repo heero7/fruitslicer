@@ -4,24 +4,41 @@ html {
 }
 
 #container {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 700px;
     background-color: lightblue;
-    margin: 100px auto;
+    margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 4px 4px black;
     position: relative;             /*For giving absolute position of score box*/
 }
 
+#lives {
+    width: 130px;
+    padding: 5px;
+    margin-left: 50px;
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 2px 2px darkgoldenrod;
+    border-radius: 2px;
+}
+
+#lives ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
 #score {
     background-color: lightgoldenrodyellow;
     color: darkgoldenrod;
     padding: 10px;
-    left: 450px;
+    left: 600px;
     border-radius: 5px;
     box-shadow: 3px 3px ;
     position: absolute;
+    margin-bottom: 15px;
 }
 
 #correct {
@@ -41,11 +58,11 @@ html {
     display: none;
 }
 
-#question {
-    width: 450px;
-    height: 140px;
-    margin: 50px auto 10px auto;
-    background-color: mediumpurple;
+#screen {
+    width: 600px;
+    height: 300px;
+    margin: 80px auto 10px auto;
+    background-color: white;
     box-shadow: 3px 4px black;
     border-radius: 5px;
     font-size: 100px;
@@ -53,7 +70,7 @@ html {
 }
 
 #instruction {
-    width: 450px;
+    width: 500px;
     height: 50px;
     background-color: cadetblue;
     margin: 10px auto;
@@ -97,17 +114,7 @@ html {
     -ms-transition: all 0.2s;
 }
 
-#timeremaining {
-    width: 90px;
-    padding: 10px;
-    position: absolute;
-    top: 400px;
-    left: 390px;
-    background-color: rgb(136, 201, 15);
-    box-shadow: 2px 2px black;
-    border-radius: 2px;
-    display: none;
-}
+
 
 #gameover {
     height: 200px;
@@ -121,8 +128,8 @@ html {
     text-align: center;
     text-transform: uppercase;
     position: absolute;
-    top: 100px;
-    left: 20px;
+    top: 130px;
+    left: 115px;
     z-index: 2;
     display: none;
 }
