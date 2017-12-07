@@ -43,5 +43,5 @@ function chooseFruit(){
 
     $("#fruit").attr('src', 'images/' + fruitLocations[Math.round(Math.random() * 6) + 1] + '.png');
     //$("#fruit").css({'left': 300, 'top': -50});
-    $("#fruit").css({'left': Math.round(Math.random() * 600), 'top': -50});
+    $("#fruit").css('top', -100);
 }

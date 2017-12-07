@@ -119,7 +119,7 @@ html {
     -ms-transition: all 0.2s;
 }
 
-.fruit-item {
+.fruit {
     display: none;
     position: absolute;
 }
