@@ -25,7 +25,7 @@ $(function() {
       playing = true;
       playerScore = 0;
       livesRemaining = 3;
-      $("#scorevalue").html(playerScore);
+      $("#scorevalue").html(0);
       $("#lives").show();
 
       addHearts();
@@ -46,8 +46,20 @@ $(function() {
     // play the sound for slicing fruits
     // using the document
     //document.getElementById("slice-sound").play();
-    // using jQuery
+    // using jQuerys
     $("#slice-sound")[0].play();
+
+    // stop fruit
+    clearInterval(action);
+
+    // hide the fruit
+        // slice the fruit - animation takes 500ms
+    $("#fruit").hide("explode", 400);
+
+    // wait until animation is finished - wait for 500ms
+    // send new fruit
+    
+    setTimeout(startAction, 500);
   });
 
   function addHearts() {
@@ -116,7 +128,7 @@ $(function() {
       "images/" + fruitLocations[Math.round(Math.random() * 6)] + ".png"
     );
     //$("#fruit").css({'left': 300, 'top': -50});
-    $("#fruit").css({ left: Math.round(Math.random() * 600), top: -50 });
+    $("#fruit").css({ left: Math.round(Math.random() * 550), top: -50 });
   }
 
   // stops moving the fruit
